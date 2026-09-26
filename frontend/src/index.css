@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { @apply bg-chalk text-ink font-body; }
+h1, h2, h3, .num { @apply font-display font-semibold tracking-wide; }
+
+.card { @apply bg-white border border-line rounded-xl2; }
+.btn { @apply rounded-lg px-4 py-2.5 font-semibold transition active:scale-[.97]; }
+.btn-amber { @apply bg-amber text-[#241300] hover:bg-amber-dark; }
+.btn-pitch { @apply bg-pitch text-white hover:bg-pitch-2; }
+.btn-ghost { @apply bg-transparent border border-line text-ink hover:bg-[#efece2]; }
+.input { @apply border border-line rounded-lg px-3 py-2 text-sm w-full bg-white focus:outline-2 focus:outline-amber; }
+.tag { @apply text-[11px] px-2 py-0.5 rounded-full border border-line text-sub; }
+.scoreboard {
+  background-color: #1B4332;
+  background-image: repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 2px, transparent 2px 40px);
+}
